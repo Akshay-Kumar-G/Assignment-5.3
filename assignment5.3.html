@@ -1,0 +1,42 @@
+<!DOCUMENTTYPE HTML>
+	<html>
+<head>
+<title>Assignment5.3</title>
+</head>
+
+<h1> This is Assignment 5.3</h1>
+<h2> <b>Assignment:</b></h2> Create a StudentDetails Object literal and insert the following properties to the object literal:<br>
+ StudentName, DOB, Skills<br>
+ Create a nested object as Address which contains properties as state, city, country, pincode.<br>
+ Add the new property as eyecolor and mother name of Student.<br>
+ Delete one property from your choice and display the Object details.
+<body>
+	<p id="st"></p>
+	<script language="JavaScript">
+
+var student = { 
+Name   : "Akshay",
+DOB    : "06/05/1994",
+age    : 23,
+skills : "C, Javascript, CSS, HTML"};
+/* Adding new property */
+student.eyecolor ={
+	color_of_Eye : "black"
+};
+student.mothername= {
+	mother : "Sumangala"
+};
+/* Adding nested property address */
+student.address = "Anekal,Banglore-562106";
+/* deletion of property */
+delete student.age;
+document.write("Name: "+student.Name+"<br>DOB: "+student.DOB+"<br>Skills: "+student.skills+"<br>Eyecolor:"+student.eyecolor.color_of_Eye);
+/*  uncomment the below line to see Another method to display the objects */
+/*document.getElementById("st").innerHTML= "Name:" +student.Name+ "<br> DOB: " +student.DOB+ "<br>Skills: "+student.skills; */
+</script>
+
+
+
+
+</body>
+</html>
