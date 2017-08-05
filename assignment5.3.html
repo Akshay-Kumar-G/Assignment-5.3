@@ -27,10 +27,15 @@ student.mothername= {
 	mother : "Sumangala"
 };
 /* Adding nested property address */
-student.address = "Anekal,Banglore-562106";
+student.address = {
+	city :"Banglore",
+    state : "Karnataka",
+    country: "India",
+    pincode : 562106
+};
 /* deletion of property */
 delete student.age;
-document.write("Name: "+student.Name+"<br>DOB: "+student.DOB+"<br>Skills: "+student.skills+"<br>Eyecolor:"+student.eyecolor.color_of_Eye);
+document.write("Name: "+student.Name+"<br>DOB: "+student.DOB+"<br>Skills: "+student.skills+"<br>Eyecolor:"+student.eyecolor.color_of_Eye+ "<br> Address: "+student.address.city+", "+student.address.state+", "+student.address.country+", "+student.address.pincode);
 /*  uncomment the below line to see Another method to display the objects */
 /*document.getElementById("st").innerHTML= "Name:" +student.Name+ "<br> DOB: " +student.DOB+ "<br>Skills: "+student.skills; */
 </script>
